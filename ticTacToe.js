@@ -10,7 +10,7 @@ const appCosnstants = {
   textDark: "text-dark",
 };
 const player = () => {
-  return isNextPerson ? "X" : "O";
+  return isNextPerson ? "O" : "X";
 };
 let winner = null;
 const lightTheme = () => {
