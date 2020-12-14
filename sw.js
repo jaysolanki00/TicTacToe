@@ -5,7 +5,7 @@ self.addEventListener("install", function (event) {
         ".",
         "./",
         "./index.html",
-        "./manifest.json",
+        "./lib/manifest.json",
         "./ticTacToe.css",
         "./ticTacToe.js",
       ]);
