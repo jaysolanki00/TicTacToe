@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTac</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ticTacToe.css" />
+    <link rel="manifest" href="/lib/manifest.json" />
+    <meta name="theme-color" content="#1a1e21" />
+  </head>
+  <body id="theme-applier" class="ttt-body">
+    <h1>Tic Tac Toe</h1>
+    
+    <label class="switch theme-label">
+      <input type="checkbox" onclick="setTheme(event)" />
+      Dark Theme
+    </label>
+    <div>
+      <button class="btn btn-primary" onclick="newGame()">New Game</button>
+    </div>
+    <h1 id="game-mode"></h1>
+    Game Mode
+    <button class="btn btn-secondary" onclick="setMultiPlayer()">
+      Multi Player
+    </button>
+    <button class="btn btn-secondary" onclick="setSinglePlayer()">
+      Single Player
+    </button>
+    <div id="currentPlayer"></div>
+    <div id="winner"></div>
+    <table id="table-canvas">
+      <tr>
+        <td onclick="makeMove(event, 0)"></td>
+        <td class="vert" onclick="makeMove(event, 1)"></td>
+        <td onclick="makeMove(event, 2)"></td>
+      </tr>
+      <tr>
+        <td class="hori" onclick="makeMove(event, 3)"></td>
+        <td class="vert hori" onclick="makeMove(event, 4)"></td>
+        <td class="hori" onclick="makeMove(event, 5)"></td>
+      </tr>
+      <tr>
+        <td onclick="makeMove(event, 6)"></td>
+        <td class="vert" onclick="makeMove(event, 7)"></td>
+        <td onclick="makeMove(event, 8)"></td>
+      </tr>
+    </table>
+
+    <script src="./ticTacToe.js"></script>
+  </body>
+</html>

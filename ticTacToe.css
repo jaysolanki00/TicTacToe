@@ -1,0 +1,33 @@
+.ttt-body {
+  user-select: none;
+  text-align: center;
+}
+.square {
+  height: 80px;
+  width: 80px;
+}
+table {
+  margin: 0px auto;
+}
+td {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 40px;
+}
+.vert {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+.hori {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.green-border {
+  border: 4px solid green;
+}
+
+.theme-label {
+  cursor: pointer;
+  user-select: none;
+}
