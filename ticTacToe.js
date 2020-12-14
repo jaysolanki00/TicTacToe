@@ -63,6 +63,7 @@ const newGame = () => {
     td.innerText = "";
     td.classList.remove("green-border");
   });
+  document.getElementById("winner").innerText = '';
 };
 
 const calculateWinner = () => {
