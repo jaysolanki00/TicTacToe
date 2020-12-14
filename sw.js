@@ -4,10 +4,10 @@ self.addEventListener("install", function (event) {
       return cache.addAll([
         "",
         "/",
-        "/index.html",
-        "/manifest.json",
-        "/ticTacToe.css",
-        "/ticTacToe.js",
+        "index.html",
+        "manifest.json",
+        "ticTacToe.css",
+        "ticTacToe.js",
       ]);
     })
   );
